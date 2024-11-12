@@ -2,6 +2,7 @@
 #define FIRST_APP_HPP
 
 #include "window/window.hpp"
+#include "pipeline/pipeline.hpp"
 
 namespace VVGE {
   class FirstApp {
@@ -19,6 +20,7 @@ namespace VVGE {
 
   private:
     Window m_window;
+    Pipeline m_pipeline{"shaders/simple_shader.vert.spv", "shaders/simple_shader.frag.spv"};
   };
 }
 
