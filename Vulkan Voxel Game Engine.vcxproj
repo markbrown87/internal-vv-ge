@@ -77,11 +77,18 @@
   <ItemGroup>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="src\app\first_app.cpp" />
+    <ClCompile Include="src\pipeline\pipeline.cpp" />
     <ClCompile Include="src\window\window.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="inc\app\first_app.hpp" />
+    <ClInclude Include="inc\pipeline\pipeline.hpp" />
     <ClInclude Include="inc\window\window.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="compile.bat" />
+    <None Include="shaders\simple_shader.frag" />
+    <None Include="shaders\simple_shader.vert" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
